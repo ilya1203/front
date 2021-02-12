@@ -1,3 +1,11 @@
+
+
+@media (orientation: portrait){
+.info{
+	border-radius: 5px;
+	width: 90%;
+	text-align: left;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -36,22 +44,6 @@ code {
 .tableOfLots .firstRow div{
 	margin-left: 10%;
 	margin-right: 25%
-}
-
-@media (orientation: portrait){
-.info{
-	border-radius: 5px;
-	width: 90%;
-	text-align: left;
-}
-}
-
-@media (orientation: landscape){
-.info{
-	border-radius: 5px;
-	width: auto;
-	text-align: left;
-}
 }
 .App table{text-align: left; width: 100%;  overflow: scroll; border-collapse: collapse;}
 .App table .bg-gray{ background-color: rgba(0,0,0,0.1); }
@@ -104,3 +96,104 @@ form input{
 	width: 85%;
 	border-radius: 5px;
 }
+}
+
+@media (orientation: landscape){
+.info{
+	border-radius: 5px;
+	width: max-content;
+	text-align: left;
+	
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+	margin: 10px;
+}
+
+.App .header{
+	text-align: left;
+	color: rgb(255,10,100);
+}
+
+.tableOfLots{
+	margin: 1%;
+	width: 100%;
+}
+
+.tableOfLots .firstRow{
+	display: flex;
+	flex-direction: row;
+	vertical-align: middle;
+	
+}
+
+.tableOfLots .firstRow div{
+	margin-left: 10%;
+	margin-right: 25%
+}
+.App table{text-align: left; width: 100%;  overflow: scroll; border-collapse: collapse;}
+.App table .bg-gray{ background-color: rgba(0,0,0,0.1); }
+.App table .firstTD{ width: 500px; text-align: center;}
+.App table .usr{ width: 250px; text-align: center;}
+.App table .firstLine{ border-bottom: 1px solid black;}
+
+.bg-red{
+	color: rgb(255,10,100);
+	background-color: rgba(255,0,100,0.1);
+}
+
+.bg-red-2{
+	color: rgb(255,10,100);
+	background-color: rgba(255,0,100,0.2);
+	border-radius: 10px;
+	border: 1px solid rgba(255,0,0,0.5);
+	width: 250px;
+	height: 50px;
+	text-align: middle
+}
+
+.primary-text{
+	color: #0275d8;
+}
+
+.red{ color: rgb(255,10,100); }
+.green{ color: #5cb85c}
+
+.strong{ font-weight: bold}
+
+.h-1{
+	font-size: 175%;
+}
+
+
+form{
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 10px;
+	border: 1px solid black;
+	width: 20%;
+	margin-left: 40%;
+}
+
+
+
+form input{
+	margin: 10px;
+	height: 30px;
+	width: 85%;
+	border-radius: 5px;
+}
+}
+
