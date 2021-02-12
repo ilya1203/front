@@ -38,12 +38,21 @@ code {
 	margin-right: 25%
 }
 
+@media (orientation: portrait){
 .info{
 	border-radius: 5px;
-	width: 100%;
+	width: 90%;
 	text-align: left;
 }
+}
 
+@media (orientation: landscape){
+.info{
+	border-radius: 5px;
+	width: auto;
+	text-align: left;
+}
+}
 .App table{text-align: left; width: 100%;  overflow: scroll; border-collapse: collapse;}
 .App table .bg-gray{ background-color: rgba(0,0,0,0.1); }
 .App table .firstTD{ width: 500px; text-align: center;}
