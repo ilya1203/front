@@ -6,7 +6,7 @@ export default class ClientsService{
 	
 	getClient(pk) {
 		console.log(pk.pk.match.params.pk);
-        const url = 'http://iluach2.pythonanywhere.com/api/'+pk.pk.match.params.pk;
+        const url = 'http://iluach2.pythonanywhere.com/api/'+pk.pk.match.params.pk+':443';
         return axios.get(url).then(response => response.data);
         return axios.get(url).then(response => response.data);
     }
