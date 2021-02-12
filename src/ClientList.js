@@ -34,7 +34,7 @@ render() {
 		
         <div  className="customers--list">
 		<div className='header'> <p className="h-1">Ход торгов <strong>{this.state.info} </strong> </p> </div> <hr />
-		<p className="bg-red info">Уважаемые участники, во времявашего хода вы можете изменить параметры торговб указанных в таблице:</p>
+		<p className="bg-red info">Уважаемые участники, во-время вашего хода вы можете изменить параметры торгов указанных в таблице:</p>
 			<div className='firstRow'><div className='primary-text'><p>ХОД</p></div> <div className="timer bg-red-2"><p id='time'>
 			
 			{this.state.tm_ch}
