@@ -2,12 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Login from './Login';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
+
+
+        
 
 ReactDOM.render(
-  <React.StrictMode>
+	<Router>
+            <Switch>
+                <Route exact path="/lot/:pk" component={App} />
+                <Route  path="/login" component={Login} />
+            </Switch>
+        </Router>,
+ /* <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>,*/
   document.getElementById('root')
 );
 

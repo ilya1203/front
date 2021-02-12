@@ -1,25 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter } from  'react-router-dom'
+import { Route, Link } from  'react-router-dom'
+import  React, { Component } from  'react';
+import ReactDOM from 'react-dom';
 
-function App() {
+import ClientList from './ClientList';
+
+
+function App(pk) {
+	var date = new Date();
+	let tm = 120 - date.getMinutes()%2*60 - date.getSeconds();
+
+	function reload(){
+		tm--;
+		date = new Date();
+		ReactDOM.render((<span >{60-date.getSeconds()}</span>), document.getElementById('sec'));
+		if(tm == 0){window.location.reload(false);}
+	}
+	{setInterval(reload, 1000*1)}
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+	
+		<div className='tableOfLots'>
+				<ClientList pk={pk} />
+				
+			</div>
+		
     </div>
-  );
+  )
 }
 
 export default App;
